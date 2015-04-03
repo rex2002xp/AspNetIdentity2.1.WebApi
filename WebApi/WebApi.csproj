@@ -114,6 +114,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\WebApi.mdf" />
+    <Content Include="App_Data\WebApi_log.ldf">
+      <DependentUpon>WebApi.mdf</DependentUpon>
+    </Content>
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -126,9 +130,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201504031844235_InitialCreate.cs" />
+    <Compile Include="Migrations\201504031844235_InitialCreate.Designer.cs">
+      <DependentUpon>201504031844235_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Identity\ApplicationDbContext.cs" />
     <Compile Include="Model\Identity\ApplicationUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201504031844235_InitialCreate.resx">
+      <DependentUpon>201504031844235_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
