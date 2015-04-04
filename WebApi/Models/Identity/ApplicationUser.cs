@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace WebApi.Model.Identity
+namespace WebApi.Models.Identity
 {
     /// <summary>
     /// Clase personalizada que hereda de IdentityUser, nos permite agregar los campos de Nombres , Nivel y Fecha de enrolamiento.

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin;
 using Owin;
 using System.Web.Http;
-using WebApi.Model.Identity;
+using WebApi.Models.Identity;
 using System.Net.Http.Formatting;
 using Newtonsoft.Json.Serialization;
 using System.Linq;
