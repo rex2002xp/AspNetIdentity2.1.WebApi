@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http.Routing;
-using WebApi.Models.Identity;
+using WebApi.Infrastructure;
 
 namespace WebApi.Models
 {

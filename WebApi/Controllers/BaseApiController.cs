@@ -3,7 +3,7 @@ using Microsoft.AspNet.Identity.Owin;
 using System.Net.Http;
 using System.Web.Http;
 using WebApi.Models;
-using WebApi.Models.Identity;
+using WebApi.Infrastructure;
 
 namespace WebApi.Controllers
 {

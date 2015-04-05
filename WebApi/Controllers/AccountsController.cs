@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
 using WebApi.Models;
-using WebApi.Models.Identity;
+using WebApi.Infrastructure;
 
 namespace WebApi.Controllers
 {

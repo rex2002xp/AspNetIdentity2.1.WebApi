@@ -6,16 +6,16 @@ namespace WebApi.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
-    using WebApi.Models.Identity;
+    using WebApi.Infrastructure;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<WebApi.Models.Identity.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<WebApi.Infrastructure.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(WebApi.Models.Identity.ApplicationDbContext context)
+        protected override void Seed(WebApi.Infrastructure.ApplicationDbContext context)
         {
             //  Este metodo va a ser llamado despues de haber migrado a la ultima version.
 

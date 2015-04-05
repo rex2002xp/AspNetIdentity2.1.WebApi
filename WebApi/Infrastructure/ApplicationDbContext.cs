@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 
 
-namespace WebApi.Models.Identity
+namespace WebApi.Infrastructure
 {
     /// <summary>
     /// Contexto para interactuar con la base de datos.
